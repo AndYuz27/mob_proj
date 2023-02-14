@@ -1,12 +1,33 @@
-import React from 'react';
-import { StyleSheet, View,  Image, Text, Button } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import React, {useState} from 'react';
+import { StyleSheet, View,  Image, Text, Button ,TextInput} from 'react-native';
+
 
 export default function Auth() {
+    const [text, setText] = useState('');
+    const [text1, setText1] = useState('');
+    const [enableSecure, setEnableSecure] = useState(true);
+    function toggleSecure() {
+      setEnableSecure(value => !value)
+    }
+
     return (
         <View style={ffgg.container}>
-          <Text>Add friends here!</Text>
+            <View style={ffgg.row}>
+                <Text>Номер телефона +7</Text>
+                <TextInput
+    keyboardType="phone-pad"
+    onChangeText={setText}
+    defaultValue={text}
+    placeholder="(800)5553535"
+  />
+  </View>
+  <View style={ffgg.row}>
+      <TextInput
+        secureTextEntry={enableSecure}
+        onChangeText={text1 => setText1(text1)}
+        defaultValue={text1}
+        placeholder="Password"
+      /></View>
         </View>
     )
 }
@@ -18,13 +39,8 @@ const ffgg = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    hdr_img:{
-      margin: 25
-    },
-    hdr_txt: {
-  
-    },
-    hdr_btn:{
-      margin: 15
+    row: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
     }
   });
