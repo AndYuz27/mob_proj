@@ -1,23 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
+import 'react-native-gesture-handler';
+import React from 'react';
 import { StyleSheet, View,  Image, Text, Button } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Title from './Title';
+import Auth from './Auth';
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <View style={styles.hdr_img}><Image source={{uri: 'https://avatars.mds.yandex.net/i?id=0cbd10dd03064100cdd699c66595f04eda0b3e17-7863844-images-thumbs&n=13'}} style={{width: 250, height: 250}} />
-      </View>
-      <Text>Добро пожаловать в учебную платформу "Tolstoy"</Text>
-      <View style={styles.hdr_btn}>
-      <Button color="green" 
-  onPress={() => {
-    console.log('You tapped the button!');
-  }}
-  title="Авторизоваться"
-/>
-      </View>
-      
- <StatusBar style="auto" />
-    </View>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="Home"
+            component={Title}
+          />
+          <Stack.Screen
+            name="Auth"
+            component={Auth}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
   );
 }
 
@@ -27,14 +30,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  hdr_img:{
-    margin: 25
-  },
-  hdr_txt: {
-
-  },
-  hdr_btn:{
-    margin: 15
   }
 });
