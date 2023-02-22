@@ -1,0 +1,36 @@
+[{
+    "data":[{
+        "id": "00001",
+        "lesson__name": "Основы Психологии",
+        "group_less": "1ИТ2.20",
+        "teacher_of_lesson": "Гроо Виктор Юрьевич",
+        "data_lesson": [{
+            "name_part": "Что такое Психология",
+            "type_lesson": "Лекция",
+            "img_header": "https://kartinkin.net/uploads/posts/2022-03/1647043124_1-kartinkin-net-p-kartinki-psikhologii-1.jpg",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper lectus eget ex congue lobortis. Nam ut interdum ex. Nunc a sagittis diam, at malesuada massa. Donec elementum justo justo, in ullamcorper velit finibus vel. Maecenas id diam eu libero sollicitudin interdum ut vel elit. Proin ac ante porttitor, faucibus lacus tristique, lobortis mi. Sed nec condimentum felis. Morbi a accumsan erat. Donec tortor neque, dapibus eget risus ut, congue condimentum enim. Quisque ullamcorper in mi non ornare. Curabitur sollicitudin sed magna quis vulputate. Vivamus in tortor quis quam elementum placerat at eget purus.",
+            "task": ""
+        },
+        {
+            "name_part": "Проверка",
+            "type_lesson": "Тест/КТ",
+            "img_header": "https://kartinkin.net/uploads/posts/2022-03/1647043124_1-kartinkin-net-p-kartinki-psikhologii-1.jpg",
+            "text": "Вам надо выполнить тест, который прикреплен в категории: 'Task for you'",
+            "task": "https://testometrika.com/personality-and-temper/find-out-your-psychological-age/"
+        }
+    ]
+    },{
+        "id": "00001",
+        "lesson__name": "Право",
+        "group_less": "1ИТ2.20",
+        "teacher_of_lesson": "Гроо Виктор Юрьевич",
+        "data_lesson": [{
+            "name_part": "There's not yet",
+            "type_lesson": "Лекция",
+            "img_header": "https://kartinkin.net/uploads/posts/2022-03/1647043124_1-kartinkin-net-p-kartinki-psikhologii-1.jpg",
+            "text": "Lorem ipsum dolor sit amet",
+            "task": ""
+        }
+    ]
+    }]
+}]

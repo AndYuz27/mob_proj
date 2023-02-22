@@ -1,10 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View,  Image, Text, Button } from 'react-native';
+import jsonAPI from "./lessons.json"
 
 export default function PersonalAccount({navigation}) {
+
+
   return (
     <View style={styles.container}>
+{jsonAPI.map(e => {
+    <View>
+        
+    </View>
+})}
 <Text>Pass</Text>
+
     </View>
   );
 }
