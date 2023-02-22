@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Title from './Title';
 import Auth from './Auth';
+import PersonalAccount from './PersonalAccount';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -18,6 +19,10 @@ export default function App() {
           <Stack.Screen
             name="Auth"
             component={Auth}
+          />
+          <Stack.Screen
+            name="PersonalAccount"
+            component={PersonalAccount}
           />
         </Stack.Navigator>
       </NavigationContainer>
